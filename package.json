@@ -1,0 +1,31 @@
+{
+  "name": "ways-books",
+  "version": "1.0.0",
+  "description": "Ways Books",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "client": "npm start --prefix ../client",
+    "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+  "keywords": [
+    "Ways",
+    "Books"
+  ],
+  "author": "Syarif Hidayat",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "mysql2": "^2.2.5",
+    "pg": "^8.5.1",
+    "sequelize": "^6.5.1",
+    "sequelize-cli": "^6.2.0"
+  }
+}
