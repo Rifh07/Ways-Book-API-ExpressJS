@@ -15,7 +15,7 @@ const { addTransaction, editTransaction, getTransactionDetail, getTransaction, g
 // router Auth
 router.post("/register", userRegistration);
 router.post("/login", userLogin);
-router.get("/check-auth", checkAuth);
+router.get("/check-auth", Authorization, checkAuth);
 
 // router Users
 router.get("/users", getUsers);
